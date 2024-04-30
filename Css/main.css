@@ -1,0 +1,133 @@
+
+/* Start Gloabal */
+body {
+    font-family: "Alegreya", serif;
+}
+:root {
+    --main-color: #8E7754; 
+    --section-padding: 60px 0; 
+    --section-bg-color: #F8F8F8;
+}
+/* End Global */
+
+/* Start Home */
+
+.home .main-nav {
+    background-color: rgba(0, 0, 0, 0.3) ;
+}
+.home {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))) , url(../images/drew-coffman-1872.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5) 0% 100%) , url(../images/drew-coffman-1872.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0% 100%) , url(../images/drew-coffman-1872.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 1.25rem;
+    color: #fff;
+    padding-left: 1.25rem;
+}
+.main-nav .nav-item .nav-link:hover {
+    color: var(--main-color);
+}
+
+
+.home .text h1 {
+    font-size: 5rem;
+} 
+
+.home .text .one{
+        background-color: var(--main-color);
+        color: #fff;
+}
+/* End Home */
+
+/* Start About */
+.about {
+    padding: var(--section-padding);
+}
+.about .text-icon p {
+    padding: .625rem 0;
+    font-size: 1.125rem;
+}
+.about .text-icon span {
+    color: var(--main-color);
+    font-size: 1.25rem;
+    padding-right: 15px;
+}
+/* End About */
+
+/* Start Offer */
+.offer {
+    padding: var(--section-padding);
+    background-color: var(--section-bg-color);
+}
+/* End Offer */
+
+/* Start Baking */
+.baking {
+    padding: var(--section-padding);
+}
+
+.baking .items .item .image {
+    overflow: hidden;
+}
+.baking .items .item img {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+.baking .items .item:hover img {
+    -webkit-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+            transform: scale(1.25);
+}
+/* End Baking */
+
+/* Start Contact */
+
+.contact {
+    padding: var(--section-padding);
+    background-color: var(--section-bg-color);
+}
+
+.contact span {
+    color: var(--main-color);
+    font-size: 25px;
+    padding-right: 10px;
+}
+/* End Contact */
+
+/* Start Blog */
+.blog {
+    background-color: #403D38;
+}
+.blog p {
+    font-size: 1.0625rem;
+    padding-right: .625rem;
+}
+.blog p span {
+    padding-right: .625rem;
+}
+
+/* End Blog */
+
+/* Start Footer */
+footer {
+    background-color: #353330;
+}
+footer p {
+    font-size: 16px;
+}
+
+/* End Footer */
+@media (max-width: 992px) {
+        .home .text {
+            margin-top: 40px;
+        }
+}
